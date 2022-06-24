@@ -1,1 +1,1 @@
-# Patient-Management-API
+# Patient Management API
