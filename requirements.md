@@ -1,28 +1,29 @@
 # Patient Management API
 
-- create patient profile
-- find patient profile by id
-- find patient profile by username
-- update patient profile by id
-- update patient profile by username
-- delete patient profile by id
-- delete patient profile by username
-- get all patient by diagnosis
-- get list of all new patient (only one visit)
-- get list of all old patient (more than one visit)
+## Requirements
+- Create patient profile
+- Find patient profile by id
+- Find patient profile by username
+- Update patient profile by id
+- Update patient profile by username and number (Number will specify the nth position of the same patient starting from 1)
+- Delete patient profile by id
+- Delete patient profile by username and number (Number will specify the nth position of the same patient starting from 1)
+- Get all patient by diagnosis (Search with anything that is written inside diagnosis string)
+- Get list of all new patient (Initialized but not updated)
+- Get list of all old patient (More than one visit)
 
 
 ## Patient: 
- - id
- - username
- - age
- - diagnosis
- - drug list
- - health advice
- - total visit
- - last visit
- - next visit time
- - patient type
+ - id (number)
+ - username (string)
+ - age (number)
+ - diagnosis (string)
+ - drug list (string)
+ - health advice (string)
+ - total visit (number)
+ - last visit (date)
+ - next visit time (number of month)
+ - patient type (string, 'old' or 'new')
 
 
 ## Routes: 
